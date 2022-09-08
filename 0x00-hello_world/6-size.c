@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
-*main-Entry point
+*main - Entry point
 *Return is : 0 (correct)
 */
 int main(void)
 {
 char a;
-int b; 
+int b;
 long int c;
 long long int d;
 float e;
