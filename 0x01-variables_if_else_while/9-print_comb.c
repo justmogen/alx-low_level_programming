@@ -14,7 +14,7 @@ if (num != '9')
 putchar(',');
 putchar(' ');
 }
-++1;
+num++;
 }
 putchar('\n');
 return (0);
