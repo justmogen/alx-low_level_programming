@@ -16,9 +16,9 @@ while (z <= '9')
 {
 if (x < y && y < z)
 {
-putchar('x');
-putchar('y');
-putchar('z');
+putchar(x);
+putchar(y);
+putchar(z);
 if (!(x == '7' && y == '8' && z == '9'))
 {
 putchar(',');
