@@ -3,7 +3,7 @@
 *main - printing all possible combinations of single-digit numbers
 *Return: 0 success
 */
-int main{void)
+int main(void)
 {
 int num = '0';
 while (num <= '9')
