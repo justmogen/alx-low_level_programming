@@ -5,11 +5,6 @@
 */
 int main(void)
 {
-int num = 0;
-while (num < 10)
-{
-printf("%d ", num);
-num++;
-}
+printf("0123456789\n");
 return (0);
 }
