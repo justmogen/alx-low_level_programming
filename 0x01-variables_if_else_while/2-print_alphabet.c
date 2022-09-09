@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - printing from a-z
-*Return : 0 successfull
+*Return :  always 0
 */
 int main(void)
 {
