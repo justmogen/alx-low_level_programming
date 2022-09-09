@@ -5,7 +5,7 @@
 /* more headers goes there */
 /**
 *main -  checks and print if numberis negative or positive or zero
-*Return 0
+*Return:always 0
 */
 /* betty style doc for function main goes there */
 
