@@ -11,7 +11,7 @@ while (t <= '9')
 putchar(t);
 t++;
 }
-int p = 'a';
+t = 'a';
 while ( p <= 'f')
 {
 putchar(p);
