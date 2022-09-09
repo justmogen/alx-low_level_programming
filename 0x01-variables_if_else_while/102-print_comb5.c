@@ -2,11 +2,10 @@
 /**
 *main - printing all combination of two two-digit numbers
 *Return: 0 success
-8
 */
 int main(void)
 {
-int x,y;
+int x, y;
 for (x = 0; x <= 99; x++)
 {
 for (y = 0; y <= 99; y++)
