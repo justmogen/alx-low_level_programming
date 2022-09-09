@@ -6,6 +6,7 @@
 /**
 *main -  checks and print if numberis negative or positive or zero
 *Return 0
+*/
 /* betty style doc for function main goes there */
 
 int main(void)
