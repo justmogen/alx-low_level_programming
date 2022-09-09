@@ -12,6 +12,7 @@ for (x = 0; x <= 99; x++)
 for (y = 0; y <= 99; y++)
 {
 if (x < y && x != y)
+{
 putchar((x / 10) + '0');
 putchar((x % 10) + '0');
 putchar(' ');
