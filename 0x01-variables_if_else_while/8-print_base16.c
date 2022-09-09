@@ -5,13 +5,13 @@
 */
 int main(void)
 {
-char t = '0';
+int t = '0';
 while (t <= '9')
 {
 putchar(t);
 t++;
 }
-char p = 'a';
+int p = 'a';
 while ( p <= 'f')
 {
 putchar(p);
