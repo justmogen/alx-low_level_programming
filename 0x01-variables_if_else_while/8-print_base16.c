@@ -12,7 +12,7 @@ putchar(t);
 t++;
 }
 t = 'a';
-while ( t <= 'f')
+while (t <= 'f')
 {
 putchar(t);
 t++;
