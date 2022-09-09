@@ -12,10 +12,10 @@ putchar(t);
 t++;
 }
 t = 'a';
-while ( p <= 'f')
+while ( t <= 'f')
 {
-putchar(p);
-p++;
+putchar(t);
+t++;
 }
 putchar('\n');
 return (0);
