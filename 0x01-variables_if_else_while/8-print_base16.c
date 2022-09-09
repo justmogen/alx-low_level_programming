@@ -5,17 +5,17 @@
 */
 int main(void)
 {
-int tt = '0';
-while (tt <= '9')
+int t = '0';
+while (t <= '9')
 {
-putchar(tt);
-tt++;
+putchar(t);
+t++;
 }
-char pp = 'a';
-while ( pp <= 'f')
+char p = 'a';
+while ( p <= 'f')
 {
-putchar(pp);
-pp++;
+putchar(p);
+p++;
 }
 putchar('\n');
 return (0);
