@@ -7,13 +7,15 @@
 */
 int main(void)
 {
-char str[8] = "_putchar";
-int s;
+	char str[8] = "_putchar";
 
-for(s = 0; s < 8; s++)
-{
-_putchar(str[s]);
+	int s;
+
+	for (s = 0;  s < 8; s++)
+	{
+		_putchar(str[s]);
+	}
+	_putchar('\n');
+	return (0);
 }
-_putchar('\n');
-return (0);
-}
+
