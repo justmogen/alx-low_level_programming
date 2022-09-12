@@ -1,16 +1,20 @@
 #include "main.h"
 /**
- * Description: will print a-z ten times
+ * print_alphabet_x10 - prints apha letters ten times
  *
- * Retuen: void success
+ * Description: prints a-z ten times in lowercase
+ *
+ * Return: void success
  */
 void print_alphabet_x10(void)
 {
 	int num;
+
 	char letr;
-	for(num = 0; num < 10; num++)
+
+	for (num = 0; num < 10; num++)
 	{
-		for(letr = 'a'; letr <= 'z'; letr++)
+		for (letr = 'a'; letr <= 'z'; letr++)
 		{
 			_putchar(letr);
 		}
