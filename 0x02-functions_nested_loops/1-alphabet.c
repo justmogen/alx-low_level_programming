@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.c"
 /**
 *print_alphabet - prints all alphabets from a-z in lowercase
 * Description: prints alphabet a-z in lowercase
