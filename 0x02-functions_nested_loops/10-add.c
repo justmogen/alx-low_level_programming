@@ -8,5 +8,7 @@
  */
 int main(void)
 {
- add(56,54);	
+ add(56,54);
+
+ return (0); 
 }
