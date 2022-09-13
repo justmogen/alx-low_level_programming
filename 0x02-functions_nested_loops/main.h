@@ -5,4 +5,4 @@
  * @num1: input first number
  * @num2: input second number
  */
-_putchar = int putchar(int char)
+_putchar = int putchar( char)
