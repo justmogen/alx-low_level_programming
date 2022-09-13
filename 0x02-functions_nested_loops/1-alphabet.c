@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
 *print_alphabet - prints all alphabets from a-z in lowercase
@@ -11,9 +10,9 @@ void print_alphabet(void)
 
 	while (letr <= 'z')
 	{
-		putchar(letr);
+		_putchar(letr);
 		letr++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
 
