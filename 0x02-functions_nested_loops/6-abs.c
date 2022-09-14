@@ -1,11 +1,22 @@
 #include "main.h"
- /** 
-  * _abs - printing absolute value of the inputs
-  * @k: our integer to  input 
-  * Return: absolute value of k
-  */ 
- int _abs(int k) 
- { 
-         return (k * ((k > 0) - (k < 0))); 
- }
-
+/**
+ * _abs - prints absolute values
+ * @k:input
+ * Return: k,the absolute value
+ */
+int _abs(int k)
+{
+	if (k < 0)
+	{
+		k = -k;
+	}
+	else if (k == 0)
+	{
+		k = 0;
+	}
+	else
+	{
+		k = k;
+	}
+	return (k);
+}
