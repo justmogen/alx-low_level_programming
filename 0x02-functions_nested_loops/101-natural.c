@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - prints multiples of 3 and 5 
+ * main - prints multiples of 3 and 5
  * and their sum
  * Return: always 0
  */
-int main ()
+int main(void)
 {
 	int num;
 
@@ -19,5 +19,4 @@ int main ()
 	}
 		printf("%d\n", sum);
 		return (0);
-	
 }
