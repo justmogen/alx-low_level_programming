@@ -7,7 +7,7 @@
 int main(void)
 {
 	int counter;
-	unsigned int fn1 = 0, fn2 = 1, sum;
+	long unsigned int fn1 = 0, fn2 = 1, sum;
 	
 	for (counter = 0; counter < 50; counter++)
 	{
