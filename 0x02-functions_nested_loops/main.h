@@ -1,11 +1,9 @@
+#include <unistd.h>
 /**
- *add - function that adds two numbers when invoked
- *Return: num1+ num2 
- *
- * @num1: input first number
- * @num2: input second number
+ * prototypes for my original files
  */
-void _putchar(char c){
-    putchar(c);
-}
+int _putchar(char c) 
+ { 
+         return (write(1, &c, 1)); 
+ }
 
