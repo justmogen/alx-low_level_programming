@@ -2,7 +2,7 @@
 /**
 *main - Prints char using putchar
 *
-*Description:  function that prints strings 
+*Description:  function that prints strings
 *Return: returns 0 success
 */
 int main(void)
