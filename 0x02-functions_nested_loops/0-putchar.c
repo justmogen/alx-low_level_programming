@@ -2,7 +2,7 @@
 /**
 *main - Prints char using putchar
 *
-*Description:  function that prints the strings using _putchar by incrementing the strings untill the end is reached
+*Description:  function that prints strings 
 *Return: returns 0 success
 */
 int main(void)
