@@ -5,4 +5,7 @@
  * @num1: input first number
  * @num2: input second number
  */
-_putchar = int putchar( char)
+void _putchar(char c){
+    putchar(c);
+}
+
