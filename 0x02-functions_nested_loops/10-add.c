@@ -2,7 +2,6 @@
 /**
   *add - adds two input integers 
   *Description:x+y
-  *
   *@num1:input
   *@num2:input
   *Return:sum of the inputs
