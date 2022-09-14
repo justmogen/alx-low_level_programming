@@ -8,6 +8,7 @@ int main(void)
 {
 	int counter;
 	unsigned long fn1 = 0, fn2 = 1, sum;
+
 	for (counter = 0; counter < 50; counter++)
 	{
 		sum = fn1 + fn2;
