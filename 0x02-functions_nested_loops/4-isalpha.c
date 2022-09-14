@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * _isalpha - prints alpha letters only
+ * _isalpha - prints alpha letters
  * Return: 1 if it is an alpha otherwise 0
- * @p: checks for alphabets
+ * @c: checks for alphabets
  */
-int _isalpha(int p)
+int _isalpha(int c)
 {
-	if ((p => 'a' && p =< 'z') || (p => 'A' &&p =< 'Z'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' &&c <= 'Z'))
 	{
 		return (1);
 	}
