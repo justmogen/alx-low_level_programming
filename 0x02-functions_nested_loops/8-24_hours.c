@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * jack_bauer - prints every minute in a 24-hour clock
- * @h:hours
- * @m:minutes
+ * @hr:hours
+ * @min:minutes
  * Return: 24 hrs clock minutes in line by line
  */
 void jack_bauer(void)
