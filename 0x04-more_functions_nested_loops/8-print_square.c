@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * print_square - prints # as square a number of times
- * size - number of times width and length
+ * print_square - prints a square followed by new line
+ * @size:number of times width and length
  * Return: square formed by '#'
  */
 void print_square(int size)
 {
 	int pl, cl;
-	
+
 	if (size > 0)
 	{
 		for (pl = 0; pl <= size; pl++)
