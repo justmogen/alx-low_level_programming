@@ -4,7 +4,7 @@
  * @n:input number of times
  * Return: diagonal straight line
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int p, dn;
 
