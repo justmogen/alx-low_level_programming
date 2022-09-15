@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 /**
  * more_numbers - function that prints 10 numbers from 0-14
  * Return: void
