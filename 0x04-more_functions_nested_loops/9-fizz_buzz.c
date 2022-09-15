@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints 1-100,x3 fizz,x5 buzz for both fizzbuzz
  * Return: always 0
