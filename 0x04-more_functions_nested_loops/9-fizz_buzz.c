@@ -14,7 +14,7 @@ int main(void)
 	for (k = 1; k <= 100; k++)
 	{
 		if (k == 100)
-			printf("%s ", bz);
+			printf("%s", bz);
 		else if ((k % 3 == 0) && (k % 5 == 0))
 			printf("%s ", fzbz);
 		else if (k % 3 == 0)
