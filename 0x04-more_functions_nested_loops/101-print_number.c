@@ -6,9 +6,9 @@
  */
 void print_number(int n)
 {
-	unsigned int nm = k;
+	unsigned int nm = n;
 
-	if (k < 0)
+	if (n < 0)
 	{
 		_putchar('-');
 		nm = -nm;
