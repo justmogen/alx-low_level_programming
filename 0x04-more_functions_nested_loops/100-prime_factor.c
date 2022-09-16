@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	long sion, prn = 612852475143;
+	long prn = 612852475143, sion;
 
 	while (sion < (prn / 2))
 	{
