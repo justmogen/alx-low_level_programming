@@ -24,5 +24,5 @@ int _atoi(char *s)
 		}
 		} while (*s++);
 
-	return (mbr * sign);
+	return (mbr * sgn);
 }
