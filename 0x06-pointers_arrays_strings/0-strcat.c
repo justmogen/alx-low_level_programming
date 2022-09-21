@@ -5,10 +5,9 @@
  * @src:string to be appended to dest
  * Return: a pointer to the resulting string @dest
  */
-char *_strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	int ndx = 0;
-	int leng = 0;
+	int ndx = 0, leng = 0;
 
 	while (dest[ndx++])
 	{
