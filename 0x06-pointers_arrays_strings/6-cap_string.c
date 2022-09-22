@@ -10,8 +10,8 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i]; i++)
 	{
-		while (!(s[i] >= 'a' && s[i] <= 'z'))
-		{
+		while (!(s[i] >= 97 && s[i] <= 122))
+
 			i++;
 		}
 		if (s[i - 1] == ' ' ||
