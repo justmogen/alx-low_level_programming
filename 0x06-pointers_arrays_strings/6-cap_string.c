@@ -10,7 +10,7 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i]; i++)
 	{
-		while (!(s[i] >= 97 && s[i] <= 122))
+		while (!(s[i] >= 'a' && s[i] <= 'z'))
 
 			i++;
 		}
@@ -29,6 +29,7 @@ char *cap_string(char *s)
 		    s[i - 1] == '}' ||
 		    i == 0)
 			s[i] -= 32;
+		i++;
 	}
 	return (s);
 }
