@@ -1,19 +1,19 @@
-#include "main"
+#include "main.h"
 /**
  * string_toupper - changes lowercase letters to uppercase
  * @str:string that is changed
  * Return: changed string pointer
  */
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int indx;
 
-	for (indx = 0; *[indx]; indx++)
+	for (indx = 0; s[indx]; indx++)
 	{
-		if (*[indx] >= 'a' && *[indx] <= 'z')
+		if (s[indx] >= 'a' && s[indx] <= 'z')
 		{
-			*[indx] -= 32;
+			s[indx] -= 32;
 		}
 	}
-	return (*);
+	return (s);
 }
