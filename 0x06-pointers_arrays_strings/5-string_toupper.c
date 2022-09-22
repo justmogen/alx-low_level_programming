@@ -4,16 +4,16 @@
  * @str:string that is changed
  * Return: changed string pointer
  */
-char *string_toupper(char *str)
+char *string_toupper(char *)
 {
 	int indx;
 
-	for (indx = 0; str[indx]; indx++)
+	for (indx = 0; *[indx]; indx++)
 	{
-		if (str[indx] >= 'a' && str[indx] <= 'z')
+		if (*[indx] >= 'a' && *[indx] <= 'z')
 		{
-			str[indx] -= 32;
+			*[indx] -= 32;
 		}
 	}
-	return (str);
+	return (*);
 }
