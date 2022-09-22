@@ -21,7 +21,7 @@ void print_buffer(char *b, int size)
 				printf(" ");
 			}
 			else
-				printf("%02x", b[ndx] + Bt);
+				printf("%02x", (b[ndx] + Bt));
 			if ((ndx % 2) != 0 && ndx != 0)
 				printf(" ");
 		}
@@ -29,9 +29,9 @@ void print_buffer(char *b, int size)
 		{
 			if ((ndx + Bt) >= size)
 				break;
-			else if (b[ndx] + Bt >= 31
-				 && b[ndx] + Bt <= 126)
-				printf("%c", b[ndx] + Bt);
+			else if ((b[ndx] + Bt) >= 31
+				 && (b[ndx] + Bt) <= 126)
+				printf("%c", (b[ndx] + Bt));
 			else
 				printf(".");
 		}
