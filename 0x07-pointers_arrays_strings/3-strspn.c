@@ -8,7 +8,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int ndx = 0;
-	unsigned int return_chrc = 0;
+	unsigned int chrc = 0;
 
 	while (*s)
 	{
@@ -16,16 +16,16 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == accept[ndx])
 			{
-				return_chrc++;
+				chrc++;
 				break;
 			}
 			else if (accept[ndx + 1] == '\0')
 			{
-				return (return_chrc);
+				return (chrc);
 			}
 			ndx++;
 		}
 		s++;
 	}
-	return (return_chrc);
+	return (chrc);
 }
