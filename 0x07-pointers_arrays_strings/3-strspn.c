@@ -8,20 +8,24 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int ndx = 0;
-	unsigned int chrc = 0;
+	unsigned int return_chrc = 0;
 
 	while (*s)
 	{
 		while (accept[ndx])
 		{
 			if (*s == accept[ndx])
-				chrc++;
+			{
+				return_chrc++;
 				break;
+			}
 			else if (accept[ndx + 1] == '\0')
-				return (bytes);
+			{
+				return (return_chrc);
+			}
 			ndx++;
 		}
 		s++;
 	}
-	return (chrc);
+	return (return_chrc);
 }
