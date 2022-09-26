@@ -7,12 +7,12 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int ndx = 0;
+	int ndx;
 	unsigned int chrc = 0;
 
 	while (*s)
 	{
-		while (accept[ndx])
+		for (ind = 0; accept[ndx]; ndx++)
 		{
 			if (*s == accept[ndx])
 			{
@@ -23,7 +23,6 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				return (chrc);
 			}
-			ndx++;
 		}
 		s++;
 	}
