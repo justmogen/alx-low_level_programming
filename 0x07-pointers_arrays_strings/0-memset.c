@@ -9,12 +9,13 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int ndx;
+	unsigned int ndx = 0;
 	char *storeMem = s, i_value = b;
 
-	for (ndx = 0; ndx < n; ndx++)
+	for (ndx < n)
 	{
 		storeMem[ndx] = i_value;
+		ndx++;
 
 	}
 	return (storeMem);
