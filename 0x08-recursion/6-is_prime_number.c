@@ -21,6 +21,8 @@ int prime_num(int n, int check)
 		return (0);
 	if (n == check - 1)
 		return (1);
+	if (check < 2)
+		return (0);
 	if (check > n)
 		return (prime_num(n + 1, check));
 	return (1);
