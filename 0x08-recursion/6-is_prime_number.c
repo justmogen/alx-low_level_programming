@@ -1,10 +1,10 @@
 #include "main.h"
+int prime_num(int n, int check);
 /**
  * is_prime_number - check for prime number
  * @n:input num to check it
  * Return:1
  */
-int prime_num(int n, int check);
 int is_prime_number(int n)
 {
 	return (prime_num(2, n));
@@ -22,6 +22,6 @@ int prime_num(int n, int check)
 	if (n == check - 1)
 		return (1);
 	if (check > n)
-		return (prime_num( n + 1, check));
+		return (prime_num(n + 1, check));
 	return (1);
 }
