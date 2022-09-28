@@ -13,5 +13,5 @@ int _strlen_recursion(char *s)
 		return (0);
 	}
 	else
-		return ((_strlen_recursion + 1) + 1);
+		return (1 + (_strlen_recursion + 1));
 }
