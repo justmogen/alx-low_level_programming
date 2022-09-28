@@ -18,6 +18,7 @@ int sqrroot(int n, int s)
 /**
  * _sqrt_recursion - find sqrroot of natural numbers
  * @n:input
+ * Return:sqrroot
  */
 int _sqrt_recursion(int n)
 {
