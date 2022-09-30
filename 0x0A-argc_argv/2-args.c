@@ -5,7 +5,7 @@
  * @argv:array of pointers of arguments
  * Return: 0 succes
  */
-int main(int argc, char *agrv[])
+int main(int argc, char *argv[])
 {
 	while (argc--)
 		printf("%s\n", argv[]);
