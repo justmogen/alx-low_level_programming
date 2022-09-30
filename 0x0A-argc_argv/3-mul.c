@@ -8,15 +8,17 @@
  */
 int main(int argc, char **argv)
 {
-	int count, mult = 1;
+	int n1, n2, mult;
+	
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[2]);
+	mult = n1 * n2;
 
-	if (argc > 1)
-	{
-		for (count = 1; count < argc; count++)
-		{
-			mult *= atoi(argv[count]);
-		}
-		printf("%d\n", mult);
-	}
-	return (mult);
+	if (argc != 3)
+		printf("Error\n");
+		return (1);
+
+	printf("%d\n", mult);
+
+	return (0);
 }
