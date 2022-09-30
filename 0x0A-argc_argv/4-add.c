@@ -6,7 +6,7 @@
  * @argv:arrays to pointers in arguments
  * Return: 1 and print error if arguments are symbols
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int add = 0, count;
 
@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	for (count = 1; count < argc; count++)
 	{
 		if (!atoi(argv[count]))
-			printf("Error\n");
+			printf("%s\n", "Error");
 			return (1);
 
 		add += atoi(argv[count]);
