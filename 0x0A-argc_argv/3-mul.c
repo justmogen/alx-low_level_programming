@@ -8,14 +8,15 @@
  */
 int main(int argc, char **argv)
 {
-	int count, add = 0;
+	int count, mult = 1;
+
 	if (argc > 1)
 	{
 		for (count = 1; count < argc; count++)
 		{
-			add += atoi(argv[count]);
+			mult *= atoi(argv[count]);
 		}
-		printf("%d\n", add);
+		printf("%d\n", mult);
 	}
-	return (add);
+	return (mult);
 }
