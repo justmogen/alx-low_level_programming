@@ -9,16 +9,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int add = 0, count;
-
-	if (argc < 1)
-		return (0);
+	int add = 0, count, dg;
 
 	for (count = 1; count < argc; count++)
 	{
-		if (!atoi(argv[count]))
-			printf("Error");
-			return (1);
+		for (dg = 0; argv[count][dg]; dg++)
+		{
+			if (argv[count][dg] > '9' || argv[count][dg] < '0')
+				printf("Error\n");
+				return (1);
+		}
 
 		add += atoi(argv[count]);
 	}
