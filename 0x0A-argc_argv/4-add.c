@@ -8,16 +8,13 @@
  */
 int main(int argc, char *argv[])
 {
-	int add = 0, count, dg;
+	int add = 0, count;
 
 	for (count = 1; count < argc; count++)
 	{
-		for (dg = 0; argv[count]; dg++)
-		{
-			if (argv[count][dg] < 0 || argv[count][dg] > 9)
-				printf("Error\n");
-				return (1);
-		}
+		if (argv[count] < '0' || argv[count] > '9')
+			printf("Error\n");
+			return (1);
 
 		add += atoi(argv[count]);
 	}
