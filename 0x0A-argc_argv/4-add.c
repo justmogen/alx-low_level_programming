@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
 
 	for (count = 1; count < argc; count++)
 	{
-		for (dg = 0; argv[count][dg]; dg++)
+		for (dg = 0; argv[count]; dg++)
 		{
-			if (argv[count][dg] < '0' || argv[count][dg] > '9')
+			if (argv[count][dg] < 0 || argv[count][dg] > 9)
 				printf("Error\n");
 				return (1);
 		}
