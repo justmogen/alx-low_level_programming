@@ -28,5 +28,5 @@ char *create_array(unsigned int size, char c)
 	for (ndx = 0; ndx < size; ndx++)
 		i_arr[ndx] = c;
 
-	return (0);
+	return (i_arr);
 }
