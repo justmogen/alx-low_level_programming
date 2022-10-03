@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * free_grid - function that frees a 2DM array
  * @grid:the 2DM array to be freed
