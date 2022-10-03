@@ -3,11 +3,11 @@
 #include <string.h>
 /**
  * _strdup - function that returns a pointer to a newly
- * 		allocated space in memory which contains a copy of 
- * 		the string given as a parameter
+ *		allocated space in memory which contains a copy of 
+ *		the string given as a parameter
  * @str:pointer to string
  * Return: pointer to thee duplicated string else
- * 		 NULL if insufficient memory
+ *		 NULL if insufficient memory
  */
 char *_strdup(char *str)
 {
@@ -18,7 +18,9 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	strleng++;
+	for (ndx = 0; str[ndx]; ndx++)
+		strleng++;
+
 	dup = malloc(sizeof(char) * (strleng + 1));
 
 	if (dup == NULL)
@@ -31,5 +33,4 @@ char *_strdup(char *str)
 	dup[strleng] = '\0';
 
 	return (dup);
-}
-	
+}	
