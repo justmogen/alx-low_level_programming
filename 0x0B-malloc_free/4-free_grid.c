@@ -8,6 +8,7 @@
 void free_grid(int **grid, int height)
 {
 	int ndx;
+
 	for (ndx = 0; ndx < height; ndx++)
 		free(grid[ndx]);
 
