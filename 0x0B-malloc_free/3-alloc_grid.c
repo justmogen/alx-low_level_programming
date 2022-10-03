@@ -32,8 +32,8 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 
-		for (i_wdth = 0; i_wdth < width; i_width++)
-			t2DM[i_ht][i_wdth] = 0;	
+		for (i_wdth = 0; i_wdth < width; i_wdth++)
+			t2DM[i_ht][i_wdth] = 0;
 	}
 	return (t2DM);
 }
