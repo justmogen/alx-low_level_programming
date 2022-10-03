@@ -11,7 +11,7 @@ int **alloc_grid(int width, int height)
 {
 	int i_ht, i_wdth, **t2DM;
 
-	if (i_wdth <= 0 || i_ht <= 0)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
 	t2DM = malloc(sizeof(int *) * height);
