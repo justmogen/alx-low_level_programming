@@ -12,20 +12,23 @@
 char *_strdup(char *str)
 {
 	char *dup;
-
-	int ndx;
+	int strleng = 0, ndx;
 
 
 	if (str == NULL)
 		return (NULL);
 
-	dup = malloc(sizeof(char) * (strlen + 1));
+	dup = malloc(sizeof(char) * (strleng + 1));
 
 	if (dup == NULL)
 		return (NULL);
+
 	for (ndx = 0; str[ndx]; ndx++)
 		dup[ndx] = str[ndx];
-	dup[strlen] = '\0';
+		strleng++;
+
+	dup[strleng] = '\0';
+
 	return (dup);
 }
 	
