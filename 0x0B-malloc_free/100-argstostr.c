@@ -18,7 +18,7 @@ char *argstostr(int ac, char **av)
 
 	for (inp1 = 0; inp1 < ac; inp++)
 	{
-		for (inp2 = 0; av[inp1][inp2]; inp++)
+		for (inp2 = 0; av[inp1][inp2]; inp2++)
 			ac++;
 	}
 
@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 
 	else
 		conc_strg[ndx++] = av[inp1][inp2];
-	conc_stg[ndx++] = '\n';
+	conc_strg[ndx++] = '\n';
 
 	conc_strg = '\0';
 
