@@ -35,7 +35,8 @@ char *argstostr(int ac, char **av)
 			ndx++;
 		}
 
-		conc_strg[ndx++] = '\n';
+		conc_strg[ndx] = '\n';
+		ndx++;
 	}
 
 	conc_strg[ac] = '\0';
