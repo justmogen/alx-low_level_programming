@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (inp1 = 0; inp1 < ac; inp++)
+	for (inp1 = 0; inp1 < ac; inp1++)
 	{
 		for (inp2 = 0; av[inp1][inp2]; inp2++)
 			ac++;
