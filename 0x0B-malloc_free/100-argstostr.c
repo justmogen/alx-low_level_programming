@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 	if (conc_strg == NULL)
 		return (NULL);
 
-	while (1)
+	for (inp1 = 0; inp1 < ac; inp1++)
 		conc_strg[ndx++] = av[inp1][inp2];
 		conc_strg[ndx++] = '\n';
 
