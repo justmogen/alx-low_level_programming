@@ -29,9 +29,9 @@ char *argstostr(int ac, char **av)
 
 	else
 		conc_strg[ndx++] = av[inp1][inp2];
-	conc_strg[ndx++] = '\n';
+		conc_strg[ndx++] = '\n';
 
-	conc_strg = '\0';
+	conc_strg[ac] = '\0';
 
 	return (conc_strg);
 }
