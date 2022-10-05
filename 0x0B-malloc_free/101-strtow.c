@@ -42,16 +42,16 @@ char **strtow(char *str)
 	char **words;
 	int ndx = 0, ndx2, wordc, w = 0, w2, i;
 
-	if (str[] == '\0' || str == NULL)
+	if (*str == '\0' || str == NULL)
 		return (NULL);
-	wordc = count_wrd[str];
+	wordc = count_wr([str);
 	if (count_wrd == 1)
 		return (NUll);
 
 	words = malloc(sizeof(char *) * wordc + 1);
 	if (words == NULL)
 		return (NULL);
-	words[wordc - 1] = NULL;
+	words[wordc - 1] = NULL);
 	while (str[ndx])
 	{
 		if (str[ndx - 1] == ' ' || ndx == 0 && (str[ndx] != ' '))
