@@ -51,7 +51,7 @@ char **strtow(char *str)
 	words[wordc - 1] = NULL;
 	while (str[ndx])
 	{
-		if (str[ndx] != ' ' && (ndx == 0 || str[ndx - 1] != ' '))
+		if (str[ndx] != ' ' && (ndx == 0 || str[ndx - 1] == ' '))
 		{
 			for (ndx2 = 1; str[ndx + ndx2] != ' ' && str[ndx + ndx2]; ndx2++)
 				;
