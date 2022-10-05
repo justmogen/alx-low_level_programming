@@ -65,13 +65,13 @@ char **strtow(char *str)
 			{
 				for (w2 = 0; w2 < w; w2++)
 					free(words[w2]);
-				free(word[wordc - 1]);
-				free(word);
+				free(words[wordc - 1]);
+				free(words);
 				return (NULL);
 			}
 			for (i = 0; i < w2; i++)
-				word[w][i] = str[ndx + 1];
-			word[w][i] = '\0';
+				words[w][i] = str[ndx + 1];
+			words[w][i] = '\0';
 			w++;
 			ndx += i;
 		}
