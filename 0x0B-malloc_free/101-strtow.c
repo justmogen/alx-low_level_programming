@@ -12,7 +12,7 @@ int count_wrd(char *strg)
 	for (ndx = 0; strg[ndx]; ndx++)
 	{
 		if (strg[ndx] == ' ')
-
+		{
 			if (strg[ndx + 1] != ' ' && strg[ndx + 1] != '\0')
 				/**
 				 *checks if next index is not a whitespace &&
@@ -20,8 +20,9 @@ int count_wrd(char *strg)
 				 *
 				 */
 				strn++;
-			else if (ndx == 0)
-				strn++;
+		}
+		else if (ndx == 0)
+			strn++;
 	}
 	strn++;
 
