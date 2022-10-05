@@ -78,5 +78,5 @@ char **strtow(char *str)
 		else
 			ndx++;
 	}
-	return (word);
+	return (words);
 }
