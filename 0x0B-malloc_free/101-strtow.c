@@ -69,7 +69,7 @@ char **strtow(char *str)
 				free(words);
 				return (NULL);
 			}
-			for (i = 0; i < w2; i++)
+			for (i = 0; i < ndx2; i++)
 				words[w][i] = str[ndx + 1];
 			words[w][i] = '\0';
 			w++;
