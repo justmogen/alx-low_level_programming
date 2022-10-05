@@ -11,13 +11,7 @@ int count_wrd(char *strg)
 
 	for (ndx = 0; strg[ndx]; ndx++)
 	{
-		if (ndx == 0)
-			/**
-			 *go to next word if starting from index 0
-			 */
-			strn++;
-
-		else if (strg[ndx] == ' ')
+		if (strg[ndx] == ' ')
 
 			if (strg[ndx + 1] != ' ' && strg[ndx + 1] != '\0')
 				/**
@@ -25,6 +19,8 @@ int count_wrd(char *strg)
 				 *not the end of the string/null byte
 				 *
 				 */
+				strn++;
+			else if (ndx == 0)
 				strn++;
 	}
 	strn++;
