@@ -44,14 +44,14 @@ char **strtow(char *str)
 
 	if (*str == '\0' || str == NULL)
 		return (NULL);
-	wordc = count_wr([str);
+	wordc = count_wrd(str);
 	if (count_wrd == 1)
-		return (NUll);
+		return (NULL);
 
 	words = malloc(sizeof(char *) * wordc + 1);
 	if (words == NULL)
 		return (NULL);
-	words[wordc - 1] = NULL);
+	words[wordc - 1] = (NULL);
 	while (str[ndx])
 	{
 		if (str[ndx - 1] == ' ' || ndx == 0 && (str[ndx] != ' '))
