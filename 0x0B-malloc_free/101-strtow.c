@@ -37,21 +37,21 @@ int count_wrd(char *strg)
 char **strtow(char *str)
 {
 	char **words;
-	int ndx = 0, ndx2, wordc = 0, w = 0, w2, i;
+	int ndx, ndx2, wordc = 0, w = 0, w2, i;
 
-	if (*str == '\0' || str == NULL)
+	if (str == NULL || *str == '\0')
 		return (NULL);
 	wordc = count_wrd(str);
 	if (wordc == 1)
 		return (NULL);
 
-	words = malloc(sizeof(char *) * wordc + 1);
+	words = malloc(sizeof(char *) * (wordc + 1));
 	if (words == NULL)
 		return (NULL);
 	words[wordc - 1] = NULL;
 	while (str[ndx])
 	{
-		if ((str[ndx - 1] == ' ' || ndx == 0) && (str[ndx] != ' '))
+		if (str[ndx] != ' ' && (ndx == 0 || str[ndx - 1] != ' '))
 		{
 			for (ndx2 = 1; str[ndx + ndx2] != ' ' && str[ndx + ndx2]; ndx2++)
 				;
