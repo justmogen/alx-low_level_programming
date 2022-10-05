@@ -70,7 +70,7 @@ char **strtow(char *str)
 				words[w][i] = str[ndx + 1];
 			words[w][i] = '\0';
 			w++;
-			ndx += i;
+			ndx += ndx2++;
 		}
 		else
 			ndx++;
