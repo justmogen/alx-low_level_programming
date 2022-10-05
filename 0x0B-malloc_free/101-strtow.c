@@ -64,7 +64,7 @@ char **strtow(char *str)
 			if (words[w] == NULL)
 			{
 				for (w2 = 0; w2 < w; w2++)
-					free(word[w2]);
+					free(words[w2]);
 				free(word[wordc - 1]);
 				free(word);
 				return (NULL);
