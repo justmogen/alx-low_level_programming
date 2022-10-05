@@ -15,12 +15,13 @@ int count_wrd(char *strg)
 			/**
 			 *go to next word if starting from index 0
 			 */
-			strn;
+			strn++;
 
 		else if (strg[ndx] == ' ')
 
 			if (strg[ndx + 1] != ' ' && strg[ndx + 1] != '\0')
-				/**checks if next index is not a whitespace &&
+				/**
+				 *checks if next index is not a whitespace &&
 				 *not the end of the string/null byte
 				 *
 				 */
@@ -43,19 +44,14 @@ char **strtow(char *str)
 
 	if (str[] == '\0' || str == NULL)
 		return (NULL);
-
 	wordc = count_wrd[str];
-
 	if (count_wrd == 1)
 		return (NUll);
 
 	words = malloc(sizeof(char *) * wordc + 1);
-
 	if (words == NULL)
 		return (NULL);
-
 	words[wordc - 1] = NULL;
-
 	while (str[ndx])
 	{
 		if (str[ndx - 1] == ' ' || ndx == 0 && (str[ndx] != ' '))
@@ -63,22 +59,18 @@ char **strtow(char *str)
 			for (ndx2 = 1; str[ndx + ndx2] != ' ' && str[ndx + ndx2]; ndx2++)
 				;
 			ndx2++;
-
 			word[w] = malloc(sizeof(char) * ndx2);
 			ndx2--;
-
 			if (word[w] == NULL)
+			{
 				for (w2 = 0; w2 < w; w2++)
-				{
 					free(word[w2]);
-				}
 				free(word[wordc - 1]);
 				free(word);
-				
 				return (NULL);
+			}
 			for (i = 0; i < w2; i++)
 				word[w][i] = str[ndx + 1];
-
 			word[w][i] = '\0';
 			w++;
 			ndx += i;
@@ -88,63 +80,3 @@ char **strtow(char *str)
 	}
 	return (word);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
