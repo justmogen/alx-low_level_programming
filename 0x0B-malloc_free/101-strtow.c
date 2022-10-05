@@ -40,7 +40,7 @@ int count_wrd(char *strg)
 char **strtow(char *str)
 {
 	char **words;
-	int ndx = 0, ndx2, wordc, w = 0, w2, i;
+	int ndx = 0, ndx2, wordc, w = 0, w2 = 0, i;
 
 	if (*str == '\0' || str == NULL)
 		return (NULL);
