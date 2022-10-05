@@ -56,7 +56,7 @@ char **strtow(char *str)
 			for (ndx2 = 1; str[ndx + ndx2] != ' ' && str[ndx + ndx2]; ndx2++)
 				;
 			ndx2++;
-			words[w] = malloc(sizeof(char) * ndx2);
+			words[w] = malloc(sizeof(char) * ndx2 + 1);
 			ndx2--;
 			if (words[w] == NULL)
 			{
