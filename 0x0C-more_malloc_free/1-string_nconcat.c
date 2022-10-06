@@ -31,13 +31,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (ndx = 0; s1[ndx]; ndx++)
 		conc[l++] = s1[ndx];
 
-	for (ndx = 0; s2[ndx] && ndx < n ; ndx++)
+	for (ndx = 0; s2[ndx] && ndx < n; ndx++)
 		conc[l++] = s2[ndx];
 	/**
 	 * ndx < n: copies the specified number of bytes to the s1 string
 	 * (a part of the string) and locates the required space in memory
 	 */
 
-	conc[l2] == '\0';
+	conc[l] = '\0';
 	return (conc);
 }
