@@ -49,7 +49,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	memory = space;
 
-	for (ndx = 0; ndx < new_size && ndx < old_size; ndx++)
+	for (ndx = 0; ndx < old_size && ndx < new_size; ndx++)
 	{
 		memory[ndx] = *cp_p++;
 	}
