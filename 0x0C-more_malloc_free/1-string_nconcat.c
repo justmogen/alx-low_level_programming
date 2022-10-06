@@ -13,8 +13,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int l = n, ndx, l2 = 0;
 	char *conc;
 
-	if (s1 == NULL || s2 == NULL)
-		s1 == "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	for (ndx = 0; s1[ndx]; ndx++)
 	{
@@ -28,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (ndx = 0; s1[ndx]; ndx++)
 		conc[l2++] = s1[ndx];
 
-	for (ndx = 0; ndx < n && s2[ndx]; ndx++)
+	for (ndx = 0; s2[ndx] && ndx < n ; ndx++)
 		conc[l2++] = s2[ndx];
 	/**
 	 * ndx < n: copies the specified number of bytes to the s1 string
