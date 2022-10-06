@@ -11,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	void *strng = malloc(b);
 	/**
 	 * the pointer to void returned by malloc is automatically converted
-	 * to the correct type 
+	 * to the correct type
 	 */
 	if (strng == NULL)
 	{
