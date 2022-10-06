@@ -14,7 +14,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	unsigned int ndx;
 	void *space;
-	char *memory *cp_p = ptr;
+	char *memory *cp_p;
 
 	/**
 	 *do nothing and return the previous memory-ptr
@@ -41,6 +41,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	/**
 	 * checking size of memory block of ptr-(cp_p) to reallocate to new_size
 	 */
+	cp_p = ptr;
 	space = malloc(sizeof(*cp_p) * new_size);
 
 	if (space == NULL)
