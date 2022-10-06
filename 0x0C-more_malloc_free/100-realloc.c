@@ -14,7 +14,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	unsigned int ndx;
 	void *space;
-	char *memory *cp_p;
+	char *memory, *cp_p;
 
 	/**
 	 *do nothing and return the previous memory-ptr
@@ -29,7 +29,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		space = malloc(new_size);
 		if (space == NULL)
 			return (NULL);
-
 		return (space);
 	}
 	/**
@@ -43,12 +42,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	 */
 	cp_p = ptr;
 	space = malloc(sizeof(*cp_p) * new_size);
-
 	if (space == NULL)
 		free(ptr);
 		return (NULL);
 	memory = space;
-
 	for (ndx = 0; ndx < old_size && ndx < new_size; ndx++)
 	{
 		memory[ndx] = *cp_p++;
