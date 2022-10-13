@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * int_index - searches for an integer
  * @size:number of elements in the array used
@@ -11,16 +11,17 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int ndx;
+	int ndx = 0;
 
 	if (array == NULL || cmp == NULL)
 	{
 		return (-1);
 	}
-	for (ndx = 0; ndx < size; ndx++)
+	while (ndx < size)
 	{
 		if (cmp(array[ndx] != 0)
 			return (ndx);
+		ndx++;
 
 	}
 	return (-1)
