@@ -1,4 +1,4 @@
-#include "3-main.h"
+#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
@@ -32,6 +32,8 @@ int main(int __attribute__((__unused__)) argc, char **argv)
 		printf("Error\n");
 		exit(100);
 	}
+
 	printf("%d\n", get_op_func(op)(n1, n2));
+
 	return (0);
 }
