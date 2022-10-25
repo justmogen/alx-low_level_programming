@@ -10,7 +10,7 @@
 #include <stdlib.h>
 
 /**
- * struct lisit_s - singly linked list
+ * struct list_s - singly linked list
  * @str: [malloce'd string]
  * @len:length of the string
  * @next:points to next node
