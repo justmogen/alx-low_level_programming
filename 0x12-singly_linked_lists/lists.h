@@ -9,6 +9,12 @@
 
 #include <stdlib.h>
 
+/**
+ * struct lisit_s - singly linked list
+ * @str: [malloce'd string]
+ * @len:length of the string
+ * @next:points to next node
+ */
 typedef struct list_s
 {
 	char *str;
