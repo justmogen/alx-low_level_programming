@@ -1,0 +1,1 @@
+More singly linked lists 😎(❁´◡`❁)
