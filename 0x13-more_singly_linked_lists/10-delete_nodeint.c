@@ -7,26 +7,29 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	/* store head */
-	listint_t *back, *tempo = *head;
-	
-	// if head node holds the index to be removed
-	if (tempo != NULL && tempo->n == index)
+	//store head node in tempo
+	listint_t *tempo = *head, *prev;
+	unsigned int count = 0;
+
+	if (tempo == NULL)
+		return (-1);
+	if (index == 0)
 	{
-		*head = tempo->next; //change head & move to next value
+		*head = (*head)->next; //changed head
 		free(tempo); //free old head
 		return (1);
 	}
-	while (tempo != NULL && tempo->n != index)
+	
+	while (count < (index - 1))
 	{
-		back = tempo;
+		count++;
+		if (tempo->next == NULL)
+			return (-1);
+
 		tempo = tempo->next;
 	}
-
-	//if index not found in list
-	if (temp == NULL)
-		return (-1);
-	back->next = tempo->next;
-	free(tempo);
+	prev = tempo->next;
+	tempo->next = prev->next; //unlink the node from linked list
+	free(prev);
 	return (1);
 }
