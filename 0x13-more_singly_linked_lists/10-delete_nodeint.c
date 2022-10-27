@@ -7,7 +7,6 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	//store head node in tempo
 	listint_t *tempo = *head, *prev;
 	unsigned int count;
 
@@ -16,8 +15,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (index == 0)
 	{
-		*head = (*head)->next; //changed head
-		free(tempo); //free old head
+		*head = (*head)->next;
+		free(tempo);
 		return (1);
 	}
 	
@@ -30,7 +29,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 
 	prev = tempo->next;
-	tempo->next = prev->next; //unlink the node from linked list
+	tempo->next = prev->next;
 	free(prev);
 	return (1);
 }
