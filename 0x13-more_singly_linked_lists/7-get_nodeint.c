@@ -2,7 +2,7 @@
 /**
  * get_nodeint_at_index - returns the nth node of a listint_t linked list.
  * @index:index of node starting at 0
- * @head:head of list-first node
+ * @head:a pointer to head of list-first node
  *
  * Return:if the node does not exist, return NULL
  */
