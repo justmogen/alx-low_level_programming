@@ -5,18 +5,27 @@
  * @n:node to be added
  * Return: the address of the new element, or NULL if it failed
  */
+
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *temp;
-	temp = *head;
+	listint_t *nNew, *lNode;
 
-	while (temp->next != NULL)
-		temp = temp->next;
+	*nNew= malloc(sizeof(listint_t));
+	nNew->n = n;
+	nNew->next = NULL;
 
-	temp->next = malloc(sizeof(listint_t));
-	temp->next->n = n;
-	temp->next->next = NULL;
-
-	return (temp);
+	/* if head is null,make it an empty list */
+	if (*head == NULL)
+		*head = nNew;
+	/* else find last node and add the nNew node */
+	else
+	{
+		lNode = *head;
+		/* loop till last node's next address is NULL */
+		while (lNode->next != NULL)
+		{
+			lNode = lNode->next;
+		}
+		lNode->next = nNew;
+	}
 }
-	
