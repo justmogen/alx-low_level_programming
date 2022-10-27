@@ -10,11 +10,6 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	/**
-	 * Create the new node
-	 * Point the next pointer of the prev node to new node.
-	 * Point the next pointer of the new node to current node.
-	 */
 	listint_t *front = *head, *nNode;
 	unsigned int count;
 
@@ -30,10 +25,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = newNode;
 		return (newNode);
 	}
-	/**
-	 * index begins at 0
-	 * traverse using loop to find the position to fix the given integer
-	 */
+
 	for (count = 0; count < (idx - 1); count++)
 	{
 		if (front == NULL || front->next == NULL)
