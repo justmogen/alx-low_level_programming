@@ -9,9 +9,9 @@
 int get_endianness(void)
 {
 	int count = 1;
-	char *end = (char *)&num;
+	char *end = (char *)&count;
 
-	if (*endian == 1)
+	if (*end == 1)
 		return (1);
 
 	return (0);
