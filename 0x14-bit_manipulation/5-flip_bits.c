@@ -18,8 +18,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	while (xOR > 0)
 	{
-		count += (xOR & 1);
-		xOR >>= 1;
+		count++;
+		xOR &= (xOR >> 1);
 	}
 	return (count);
 }
