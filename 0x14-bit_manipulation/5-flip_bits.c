@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * flip_bits - function that returns the number of bits you would need
  *		to flip to get from one number to another
@@ -19,7 +18,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	while (xOR > 0)
 	{
 		count++;
-		xOR &= (xOR >> 1);
+		xOR &= (xOR - 1);
 	}
 	return (count);
 }
