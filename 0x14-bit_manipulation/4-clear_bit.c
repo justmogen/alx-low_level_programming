@@ -10,9 +10,9 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long count;
+	unsigned long int count;
 
-	if (n == NULL)
+	if (n == NULL || index > 63)
 		return (-1);
 	count = 1 << index;
 
