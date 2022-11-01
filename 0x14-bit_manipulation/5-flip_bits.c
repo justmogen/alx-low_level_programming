@@ -14,12 +14,13 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int bit = 0;
-	unsigned long xOR = (n ^ m);
 
-	while (xOR > 0)
+	while (n != 0 || m != 0)
 	{
-		bit++;
-		xOR = xOR & (xOR - 1);
+		if ((n & 1) != (m & 1))
+			bit++;
+		m >>= 1;
+		n >>= 1;
 	}
 	return (bit);
 }
