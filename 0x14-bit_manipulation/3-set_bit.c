@@ -9,9 +9,9 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int count;
+	unsigned long int count;
 
-	if (n == NULL)
+	if (n == NULL || index > 31)
 		return (-1);
 	count = 1 << index;
 
