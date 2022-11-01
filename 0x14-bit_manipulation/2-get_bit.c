@@ -12,7 +12,7 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	count = (n >> index) & 1;
 
-	if ((count == 1) || (count == 0))
+	if ((count == 0) || (count == 1))
 		return (count);
 
 	else
