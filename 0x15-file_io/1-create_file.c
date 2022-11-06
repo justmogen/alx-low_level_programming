@@ -6,10 +6,10 @@
  * if text_content is NULL create an empty file
  * if filename is NULL return -1
  * if the file already exists, truncate it
- * Returns: 1 on success, -1 on failure (file can not be created,
- * 		file can not be written, write “fails”, etc…)
+ * Return: 1 on success, -1 on failure (file can not be created,
+ *		file can not be written, write “fails”, etc…)
  * The created file must have those permissions: rw-------.
- * 	If the file already exists, do not change the permissions.
+ *	If the file already exists, do not change the permissions.
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -17,7 +17,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	
+
 	if (text_content != NULL)
 	{
 		while (text_content[leng])
