@@ -2,7 +2,8 @@
 /**
  * create_file - creates a file
  * @filename:a pointer to name of the file to create
- * @text_content:is a NULL terminated string to write to the file
+ * @text_content:is a NULL terminated or pointer 
+ *		to string to write to the file
  * if text_content is NULL create an empty file
  * if filename is NULL return -1
  * if the file already exists, truncate it
