@@ -2,7 +2,7 @@
 /**
  * get_dnodeint_at_index - get nth node in dlistint_t linked list
  * @head: pointer to head of linked list
- * @nindex: node value to be located
+ * @index: node value to be located
  *
  * Return: NULL if node doesn't exist else address of node
  */
