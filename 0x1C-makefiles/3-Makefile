@@ -1,15 +1,15 @@
-CC = gcc	#compiler
-SRC = main.c school.c	#Source files
-OBJ = $(SRC:.c=.o)	#Object files
-NAME = school	#executable name
-RM = rm -f	#program to delete files
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 # Build object files
-# %.o: %.c
-# $(CC) -c $< -o $@
+%.o: %.c
+$(CC) -c $< -o $@
 
 # Clean Emacs and Vim temporary files and executable
 clean:
