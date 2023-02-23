@@ -8,8 +8,8 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 # Build object files
-%.o: %.c
-	$(CC) -c $< -o $@
+# %.o: %.c
+# $(CC) -c $< -o $@
 
 # Clean Emacs and Vim temporary files and executable
 clean:
