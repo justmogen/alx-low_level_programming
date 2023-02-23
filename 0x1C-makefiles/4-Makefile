@@ -1,26 +1,19 @@
-CC = gcc        #compiler
-SRC = main.c school.c   #Source files
-OBJ = $(SRC:.c=.o)      #Object files
-NAME = school   #executable name
-RM = rm -f      #program to delete files
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o) 
+NAME = school
+RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(CLFAGS) $(OBJ) -o $(NAME)
 
-# Build object files
-%.o: %.c
-	$(CC) -c $< -o $@
-# Clean Emacs and Vim temporary files and executable
 clean:
-	        $(RM) *~ $(NAME)
+	$(RM) *~ $(NAME)
 
-# Clean object files
 oclean:
-	 $(RM) $(OBJ)
+	$(RM) $(OBJ)
 
-# Clean Emacs and Vim temporary files, executable, and object files
 fclean: clean oclean
 
-# Force recompilation of all source files
 re: fclean all
