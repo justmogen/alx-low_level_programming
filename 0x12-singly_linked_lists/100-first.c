@@ -1,9 +1,9 @@
 #include <stdio.h>
-void __attribute__((print)) justaString(void);
+void print_message(void)__attribute__((constructor));
 /**
- *  justaString - prints a str before main function is executed
+ *  print_message - prints a str before main function is executed
  */
-void  justaString(void)
+void  print_message(void)
 {
 	printf("You're beat! and yet, you must allow,\n"
 		"I bore my house upon my back!\n");
